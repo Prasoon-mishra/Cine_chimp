@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+     <meta name="home page" content="Home page of CineChimp">
+    <link rel="stylesheet" type="text/css" href="aboutstyle.css">
+    <title>Contact us</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <img src="bmg.png" alt="">
+        <span id="title">Contact us</span>>
+        <a href="http://localhost/J/profile/myProfile.html">My Profile</a>
+      </div>
+      <div class="head2">
+        <ul id="topleft">
+          <li><a href="http://localhost/J/home/home.html">Home</a></li>
+          <li><a href="http://localhost/J/Movies/movies.html">Movies</a></li>
+          <li><a href="http://localhost/J/My Bookings/booking.php">My Bookings</a></li>
+          <li><a href="http://localhost/J/Login/login.php">Login</a></li>
+        </ul>
+        <ul id="topright">
+          <li><a href="http://localhost/J/contact/contact.html">Contact Us</a></li>
+          <li><a href="http://localhost/J/About/About.html">About us</a></li>
+        </ul>
+      </div>
+      <div class="slide0">
+        <img src="banner.png" alt="">
+        <form class="contact" action="connect.php" method="POST">
+          <input type="text" placeholder="Your Name" name="username" value="" pattern=".{1,30}" required><br>
+          <input type="email" placeholder="E-mail" name="email" value="" required><br>
+          <input type="text" placeholder="Enter Your Message" name="message" value="" pattern=".{5,200}" required><br>
+          <input id="submit" type="submit" name="" value="Submit Feedback">
+        </form>
+    </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,226 @@
+*
+{
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+.main
+{
+  position: absolute;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../hall2.jpg);
+  background-color: white;
+  background-size: AUTO;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+.header a
+{
+  color: #fff;
+  position: absolute;
+  float: right;
+  right: 2px;
+  font-size: 23px;
+  margin-top: 10px;
+  margin-right: 20px;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+}
+.header a:hover
+{
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+#searchbox
+{
+  position: absolute;
+  margin-top: 7px;
+  width: 50%;
+  height: 4%;
+  border-radius: 25px;
+  padding: 20px;
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: #BBBDC1;
+  border-radius: 5px;
+  font: 16px Arial;
+  color: black;
+}
+#search
+{
+  text-align: center;
+  position: absolute;
+  left: 1025px;
+  margin-top: 6px;
+  border-radius: 25px;
+  padding: 13px;
+  font: 16px Arial;
+  border: 1px solid black;
+  background-color: #BBBDC1;
+  color: black;
+}
+#search:hover
+{
+  cursor: pointer;
+  background-color: white;
+}
+.header
+{
+  /*background-image: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.7));*/
+  background-color: #333545;
+  position: relative;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 2px;
+  height: 9.5%;
+}
+.header img
+{
+  height: 80%;
+  margin-left: 20px;
+  margin-right: 50px;
+  margin-top: 5px;
+}
+#topright
+{
+  float: right;
+  list-style-type: none;
+    margin-top: 13.8px;
+    margin-right: 7px;
+}
+#topright li
+{
+  display: inline-block;
+}
+#topright li a
+{
+  text-decoration: none;
+  color: #fff;
+  padding: 14px 20px;
+  margin-right: 15px;
+  transition: 0.5s ease;
+}
+#topright li a:hover
+{
+  background-color: red;
+  color: white;
+}
+.head2
+{
+  /*background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.5));*/
+  background-color: #1f2533;
+  position: relative;
+  width: 100%;
+  height: 6.9%;
+}
+#topleft
+{
+  float: left;
+  list-style-type: none;
+  margin-top: 13.8px;
+}
+#topleft li
+{
+  display: inline-block;
+}
+#topleft li a
+{
+  text-decoration: none;
+  color: #fff;
+  padding: 14px 20px;
+  /*border: 1px solid #fff;*/
+  transition: 0.5s ease;
+}
+#topleft li a:hover
+{
+  background-color: red;
+  color: white;
+}
+.slide0
+{
+  position: relative;
+  width: 100%;
+  height: 82.5%;
+  background-color:  #F1F1F2;
+}
+.slide1
+{
+  width: 1364px; /*800*310*/
+  height: 537.5px;
+  border: 1px solid black;
+  position: relative;
+}
+slider
+{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #1f1f1f;
+  overflow: hidden;
+  position: absolute;
+}
+slider > *
+{
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #1f1f1f;
+  animation: slide 12s infinite;
+  overflow: hidden;
+}
+
+slide:nth-child(1)
+{
+  left:0%;
+  animation-delay: -1s;
+  background-image: url(1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+slide:nth-child(2)
+{
+  left: 100%;
+  animation-delay: 2s;
+  background-image: url(2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+slide:nth-child(3)
+{
+  left: 100%;
+  animation-delay: 5s;
+  background-image: url(3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+slide:nth-child(4)
+{
+  left: 100%;
+  animation-delay: 8s;
+  background-image: url(4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+/*slide p
+{
+  font-family: Comfortaa;
+  font-size: 60px;
+  text-align: center;
+  color: #fff;
+}*/
+@keyframes slide
+{
+  0% { left: 100%;width: 100%;opacity:1;}
+  5% {left: 0%;}
+  25% {left: 0%;}
+  30% {left: -100%;width: 100%; opacity: 1;}
+  30.0001%{left: -100%;width: 0%;opacity: 0;}
+  100%{left: 100%;width: 0%;opacity: 0;}
+}

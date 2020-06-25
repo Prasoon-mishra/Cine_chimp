@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="movscr.js"></script>
+    <meta charset="utf-8" >
+    <meta name="home page" content="Home page of CineChimp">
+    <link rel="stylesheet" type="text/css" href="moviesstyle.css">
+    <title>Book My Show</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <img src="bmg.png" alt="">
+        <span id="title">Movies</span>
+        <a href="http://localhost/J/profile/myProfile.html">My Profile</a>
+      </div>
+      <div class="head2">
+        <ul id="topleft">
+          <li><a href="http://localhost/J/home/home.html">Home</a></li>
+          <li><a href="http://localhost/J/Movies/movies.html">Movies</a></li>
+          <li><a href="http://localhost/J/My Bookings/booking.php">My Bookings</a></li>
+          <li><a href="http://localhost/J/Login/login.php">Login</a></li>
+        </ul>
+        <ul id="topright">
+          <li><a href="http://localhost/J/contact/contact.html">Contact Us</a></li>
+          <li><a href="http://localhost/J/About/About.html">About us</a></li>
+        </ul>
+      </div>
+      <div class="slide0">
+        <div id="choosecity">
+        <span>Choose Your City : </span>
+        <select id="city">
+          <option id="vel" value="vellore">Vellore</option>
+          <option id="chen" value="chennai">Chennai</option>
+          <!---<option value="Coimbatore">Coimbatore</option>
+          <option value="Bangalore">Bangalore</option>--->
+        </select>
+        <button style="margin-left: 10px; height: 35px; border-radius: 20px; border:transparent; width: 40px;" onclick="mov()"> GO </button>
+      </div>
+      <div id="movies">
+        <a onclick="movform('Jai Mummy Di')"><img src="1.jpg" alt=""></a>
+        <a onclick="movform('Chapaak')"><img src="2.jpg" alt=""></a>
+        <a onclick="movform('Street Dancer 3')"><img src="3.jpg" alt=""></a>
+      </div>
+      <div id="movies1">
+        <a onclick="movform('Captain Marvel')"><img src="5.jpg" alt=""></a>
+        <a onclick="movform('Jai Mummy Di')"><img src="1.jpg" alt=""></a>
+        <a onclick="movform('Black Panther')"><img src="6.jpg" alt=""></a>
+      </div>
+      <div id="book">
+        <p>Book Movie Ticket</p>
+        <form action="movies.php" method="POST" id="booking">
+        <table>
+          <tr>
+            <td>Date : </td>
+            <td><input type="date" name="mdate" id="ali" min="2020-06-04" max="2020-06-10" required></td>
+          </tr>
+          <tr>
+            <td>No of Seats : </td>
+            <td><input type="text" id="ali" name="mseat" pattern="[0-9]{1}" title="Enter Seats from 0-9" required></td>
+          </tr>
+          <tr>
+            <td>Movie : </td>
+            <td><input type="text" id="mo" name="mname" readonly></td>
+          </tr>
+          <tr>
+            <td>Type of seat : </td>
+            <td>
+              <select id="ali" name="seat">
+                <option value="VIP - Rs.300">VIP - Rs.300</option>
+                <option value="PREMIUM - Rs.250">PREMIUM - Rs.250</option>
+                <option value="EXECUTIVE - Rs.220">EXECUTIVE - Rs.220</option>
+                <option value="NORMAL - Rs.200">NORMAL - Rs.200</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Time : </td>
+            <td>
+              <select id="ali" name="time">
+                <option value="11:00 A.M. to 02:00 P.M.">11:00 A.M. to 02:00 P.M.</option>
+                <option value="05:00 P.M. to 08:00 P.M.">05:00 P.M. to 08:00 P.M.</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><input type="submit" value="BOOK" id="submit"></td>
+          </tr>
+        </table>
+      </form>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>

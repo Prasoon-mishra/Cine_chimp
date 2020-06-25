@@ -1,0 +1,5 @@
+Home
+Movies
+My Bookings
+Profile
+Log Out

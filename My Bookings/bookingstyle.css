@@ -1,0 +1,157 @@
+*
+{
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+.main
+{
+  position: absolute;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../hall2.jpg);
+  background-color: white;
+  background-size: AUTO;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+.display
+{
+  padding: 10px 20px;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+
+#title
+{
+  position: absolute;
+  right: 550px;
+  text-align: center;
+  font-size: 45px;
+  margin-top: 1px;
+  color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+.header a
+{
+  color: #fff;
+  position: absolute;
+  float: right;
+  right: 2px;
+  font-size: 23px;
+  margin-top: 10px;
+  margin-right: 20px;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+}
+.header a:hover
+{
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+
+.header
+{
+  /*background-image: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.7));*/
+  background-color: #333545;
+  position: relative;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 2px;
+  height: 9.5%;
+}
+.header img
+{
+  height: 80%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+#topright
+{
+  float: right;
+  list-style-type: none;
+    margin-top: 13.8px;
+    margin-right: 7px;
+}
+#topright li
+{
+  display: inline-block;
+}
+#topright li a
+{
+  text-decoration: none;
+  color: #fff;
+  padding: 14px 20px;
+  margin-right: 15px;
+  transition: 0.5s ease;
+}
+#topright li a:hover
+{
+  background-color: red;
+  color: white;
+}
+.head2
+{
+  /*background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.5));*/
+  background-color: #1f2533;
+  position: relative;
+  width: 100%;
+  height: 6.9%;
+}
+#topleft
+{
+  float: left;
+  list-style-type: none;
+  margin-top: 13.8px;
+}
+#topleft li
+{
+  display: inline-block;
+}
+#topleft li a
+{
+  text-decoration: none;
+  color: #fff;
+  padding: 14px 20px;
+  /*border: 1px solid #fff;*/
+  transition: 0.5s ease;
+}
+#topleft li a:hover
+{
+  background-color: red;
+  color: white;
+}
+.slide0
+{
+  position: relative;
+  width: 100%;
+  height: 82.5%;
+  background-color:   #BBBDC1;
+  text-align: center;
+}
+.slide0 tr,td,th
+{
+  background-color: white;
+  font-family: 'Lato', sans-serif;
+  padding: 15px 41px;
+  font-size: 20px;
+  text-align: center;
+}
+.slide0 table
+{
+  box-shadow: 0px 0px 8px grey;
+  margin: 2.0% 6.0%;
+  position: absolute;
+}
+.slide0 th
+{
+  background-color: black;
+  color: white;
+}
